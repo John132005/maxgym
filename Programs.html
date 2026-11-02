@@ -2,36 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>MAXGYM PROGRAMS</title>
-    <link rel="stylesheet" href="programs.css">
-    <!-- Font Awesome for meta icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAXGYM | Programs</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="max&fitness.css">
 </head>
 <body>
+
     <!-- ======================== NAVBAR ========================== -->
     <header class="navbar">
-        <div class="logo">MAX<span>GYM</span></div>
-        <nav>
+        <a href="index.html" class="logo">MAX<span>GYM</span></a>
+        
+        <nav class="nav-menu" id="navMenu">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="programs.html">Programs</a></li>
+                <li><a href="programs.html" class="active">Programs</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="instructor.html">Instructor</a></li>
-            </ul>
+            </ul> 
         </nav>
-        <a href="tel:+919876785768" class="contact-pill">
-            <div class="contact-info">
-                <span class="label">Contact us</span>
-                <span class="number">+91 987 - 6785 - 768</span>
-            </div>
-            <div class="phone-circle">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                </svg>
-            </div>
-        </a>
+
+        <div class="nav-right">
+            <a href="tel:+919876785768" class="contact-pill">
+                <div class="contact-info">
+                    <span class="label">Contact us</span>
+                    <span class="number">+91 987 - 6785 - 768</span>
+                </div>
+                <div class="phone-circle">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                </div>
+            </a>
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
     </header>
 
     <!-- ================= PROGRAMS SECTION ================= -->
@@ -47,10 +57,13 @@
             <div class="program-card">
                 <div class="card-badge">Hypertrophy</div>
                 <div class="program-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 4c-.8 0-1.5.7-1.5 1.5v1h-2V5.5c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5v1h-4v-1c0-.8-.7-1.5-1.5-1.5S7 4.7 7 5.5v1H5v-1c0-.8-.7-1.5-1.5-1.5S2 4.7 2 5.5v13c0 .8.7 1.5 1.5 1.5S5 19.3 5 18.5v-1h2v1c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-1h4v1c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-1h2v1c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-13c0-.8-.7-1.5-1.5-1.5z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.5 4c-.8 0-1.5.7-1.5 1.5v1h-2V5.5c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5v1h-4v-1c0-.8-.7-1.5-1.5-1.5S7 4.7 7 5.5v1H5v-1c0-.8-.7-1.5-1.5-1.5S2 4.7 2 5.5v13c0 .8.7 1.5 1.5 1.5S5 19.3 5 18.5v-1h2v1c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-1h4v1c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-1h2v1c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-13c0-.8-.7-1.5-1.5-1.5z"/>
+                    </svg>
                 </div>
                 <h3>Strength & Muscle</h3>
                 <p>Progressive overload routines designed to break plateaus and maximize muscle density.</p>
+                
                 <div class="program-meta">
                     <!-- Weeks Dropdown -->
                     <div class="meta-dropdown">
@@ -62,6 +75,7 @@
                             <option value="16">16 Weeks</option>
                         </select>
                     </div>
+
                     <!-- Level Dropdown -->
                     <div class="meta-dropdown">
                         <i class="fa-solid fa-signal"></i>
@@ -75,14 +89,17 @@
                 </div>
             </div>
 
-            <!-- Program 2 (Featured) -->
+            <!-- Program 2 -->
             <div class="program-card featured">
                 <div class="card-badge highlight-badge">Most Popular</div>
                 <div class="program-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 23c-4.97 0-9-4.03-9-9 0-4.63 3.65-8.22 6.28-11.29.35-.41.97-.47 1.4-.12.18.15.29.36.32.59.3 2.5 1.7 4.3 3.2 5.5 1.5-2.2 2.3-4.7 2.3-7.2 0-.46.33-.85.78-.91.46-.06.88.22 1.02.66C19.8 6.5 21 10.2 21 14c0 4.97-4.03 9-9 9z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 23c-4.97 0-9-4.03-9-9 0-4.63 3.65-8.22 6.28-11.29.35-.41.97-.47 1.4-.12.18.15.29.36.32.59.3 2.5 1.7 4.3 3.2 5.5 1.5-2.2 2.3-4.7 2.3-7.2 0-.46.33-.85.78-.91.46-.06.88.22 1.02.66C19.8 6.5 21 10.2 21 14c0 4.97-4.03 9-9 9z"/>
+                    </svg>
                 </div>
                 <h3>Fat Shred & HIIT</h3>
                 <p>High-tempo metabolic conditioning that burns maximum calories while preserving lean muscle.</p>
+                
                 <div class="program-meta">
                     <!-- Weeks Dropdown -->
                     <div class="meta-dropdown">
@@ -94,6 +111,7 @@
                             <option value="16">16 Weeks</option>
                         </select>
                     </div>
+
                     <!-- Level Dropdown -->
                     <div class="meta-dropdown">
                         <i class="fa-solid fa-signal"></i>
@@ -111,10 +129,13 @@
             <div class="program-card">
                 <div class="card-badge">Cardio & Mobility</div>
                 <div class="program-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 9.3V14h2V9.9l1.8-1z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 9.3V14h2V9.9l1.8-1z"/>
+                    </svg>
                 </div>
                 <h3>Athletic Endurance</h3>
                 <p>Functional speed, agility, and joint flexibility drills built for overall athletic performance.</p>
+                
                 <div class="program-meta">
                     <!-- Weeks Dropdown -->
                     <div class="meta-dropdown">
@@ -126,6 +147,7 @@
                             <option value="16">16 Weeks</option>
                         </select>
                     </div>
+
                     <!-- Level Dropdown -->
                     <div class="meta-dropdown">
                         <i class="fa-solid fa-signal"></i>
@@ -146,7 +168,7 @@
         <div class="footer-container">
             <!-- Column 1: Brand Info -->
             <div class="footer-col brand-col">
-                <a href="#" class="logo">MAX<span>GYM</span></a>
+                <a href="index.html" class="logo">MAX<span>GYM</span></a>
                 <p class="footer-about">
                     Engineered for high performers, beginners, and relentless athletes. Build strength, build discipline, and discover your true limit.
                 </p>
@@ -173,11 +195,11 @@
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#programs">Programs</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#gallery">Facility Gallery</a></li>
-                    <li><a href="#instructor">Our Coaches</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Facility Gallery</a></li>
+                    <li><a href="instructor.html">Our Coaches</a></li>
                 </ul>
             </div>
 
@@ -212,5 +234,22 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Navigation Toggle Script -->
+    <script>
+        const toggleBtn = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (toggleBtn && navMenu) {
+            toggleBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icon = toggleBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-xmark');
+                }
+            });
+        }
+    </script>
 </body>
 </html>
